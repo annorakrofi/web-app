@@ -5,7 +5,8 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>3.5.1-snapshot</version>
+	<version>3.5.1-SNAPSHOT</version>
+
 	
 	<name>maven-web-application</name>
 
@@ -92,21 +93,21 @@
 		</dependency>
 		
 	</dependencies>
-	
 	<distributionManagement>
-	    <repository>
-	      <id>nexus</id>
-	      <name>JOMACS Releases Nexus Repository</name>
-	      <url>http://localhost:8081/repository/gtb-app-release/</url>
-	    </repository>
-	    
-	    <snapshotRepository>
-	      <id>nexus</id>
-	      <name>JOMACS Snapshot Nexus Repository </name>
-	      <url>http://localhost:8081/repository/gtb-app-snapshot/</url>
-	    </snapshotRepository>
-	    
-	</distributionManagement>
+    <repository>
+        <id>release-repo</id>
+        <name>JOMACS Releases Nexus Repository</name>
+        <url>http://localhost:9091/repository/gtb-release/</url>
+    </repository>
+    
+    <snapshotRepository>
+        <id>snapshot-repo</id>
+        <name>JOMACS Snapshot Nexus Repository</name>
+        <url>http://localhost:9091/repository/gtb-snapshot/</url>
+    </snapshotRepository>
+</distributionManagement>
+
+	
 	
 	<build>
 		<finalName>web-app</finalName>
