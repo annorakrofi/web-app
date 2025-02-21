@@ -14,7 +14,7 @@ node{
     //sh "${MHD}/bin/mvn sonar:sonar"
     }
     stage('5.UploadArtifacts'){
-    //sh "${MHD}/bin/mvn deploy"
+    //ssh "${MHD}/bin/mvn deploy"
     }
     stage('6.Deploy2Stage'){
     sshagent(['32d5fb4f-d92f-4a10-9f12-2738eab55fcc']) {
